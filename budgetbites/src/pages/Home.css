@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  color: #333;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ff6600;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #ff6600;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #e65500;
+}
+
+/* ---------- EDIT & DELETE BUTTON STYLES ---------- */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Edit Button */
+.edit-btn {
+  background: linear-gradient(135deg, #ffa94d, #ff6600);
+  color: white;
+}
+
+.edit-btn:hover {
+  background: linear-gradient(135deg, #ff852d, #e65500);
+  transform: translateY(-2px);
+}
+
+/* Delete Button */
+.delete-btn {
+  background: linear-gradient(135deg, #ff6b6b, #e63946);
+  color: white;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #ff4d4d, #c1121f);
+  transform: translateY(-2px);
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative; /* ❗ Remove fixed position */
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 40px; /* Add little gap above footer */
+}
+

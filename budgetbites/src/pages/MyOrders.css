@@ -1,0 +1,110 @@
+.my-orders {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+  font-family: "Poppins", sans-serif;
+}
+
+.my-orders h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ff6600;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+  background: #93b9e3;
+}
+
+.status-pending { background: #f0ad4e; }
+.status-accepted { background: #5bc0de; }
+.status-preparing { background: #ff9f43; }
+.status-out_for_delivery { background: #7c4dff; }
+.status-delivered { background: #28a745; }
+.status-cancelled { background: #e63946; }
+
+.order-items {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  color: #444;
+}
+
+.order-total {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ff6600;
+}
+
+.progress-tracker {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+}
+
+.progress-tracker::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #ddd;
+  z-index: 0;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  z-index: 1;
+}
+
+.progress-step .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ddd;
+  margin-bottom: 6px;
+}
+
+.progress-step.done .dot {
+  background: #ff6600;
+}
+
+.progress-step .label {
+  font-size: 0.7rem;
+  text-align: center;
+  color: #888;
+}
+
+.progress-step.done .label {
+  color: #ff6600;
+  font-weight: 600;
+}

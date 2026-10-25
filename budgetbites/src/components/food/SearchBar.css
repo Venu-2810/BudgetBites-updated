@@ -1,0 +1,18 @@
+.search-bar {
+    display: flex;
+    gap:80px;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.search-select {
+    padding: 8px;
+    border: 1px solid #81aae0;
+    border-radius: 6px;
+}
